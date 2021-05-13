@@ -1,0 +1,102 @@
+.search-results {
+   
+ display: grid;
+ grid-template-columns:  repeat(5,1fr);
+  height: 650px;
+	padding: 0.25rem;
+  box-decoration-break: clone;
+ width: 1000px;
+ overflow: scroll;
+ margin-left: 400px;
+background-color: rgba(15, 1, 15,0);
+
+}
+.search-results::-webkit-scrollbar {
+  display: none;
+}
+.music-artwork-section img {
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 23%;
+    padding: 20px;
+   
+    cursor: pointer;
+    
+}
+.results-list-item-content:hover .music-artwork-section img{
+  filter: opacity(85%);
+ 
+}
+.play-icon {
+  opacity: 0;
+  
+ cursor: pointer;
+  z-index: 1;
+  top: -80px; left: 35px;
+  position: relative;
+  color: #fff;
+  background: #1890ff;
+ 
+  max-width: 10px;
+  border-radius: 50%;
+  padding: 0px 5px 0px;
+}
+.results-list-item-content:hover .play-icon{
+  opacity: 1;
+  color: #fff;
+  background: #1890ff;
+
+  transition: all 0.5s cubic-bezier(.29, 1.01, 1, 2.68);
+}
+.results-list-item-content{
+
+  animation: pendulum 1.5s linear  2 alternate-reverse;
+}
+.results-list-item-content:hover{
+ 
+
+  background: radial-gradient(ellipse at top, #EC1C24, transparent),
+  radial-gradient(ellipse at bottom, #0f0001, transparent);
+
+  box-shadow: 20px 28px 28px rgba(42, 42, 197, 0.05);
+
+ border-radius: 30px;
+ transition: all 2s cubic-bezier(0.76,-0.45, 0.38, 1.4);
+}
+@keyframes pendulum{
+  100%{
+    transform: rotateZ(-5deg) 
+  }
+ 0%{
+   transform: rotateZ(5deg)
+ }
+}
+.results-details-content {
+   position: relative;
+  top: -40px;
+       
+}
+
+.results-details-section {
+	color: rgb(104, 100, 100);
+    cursor: pointer;
+    padding-left: 24px;
+   max-height: 20px;
+   max-width: 230px;
+  display: flex;
+}
+
+.music-trackName {
+	color:rgb(246, 246, 253);
+    
+}
+
+.music-artistName{
+  color:rgb(169, 163, 185);
+  
+   }
+ .music-artistName:hover{
+ color: blue;
+
+} 

@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import MusicDetails from './components/MusicDetails';
+import Navigation from './components/Navigation';
+import SearchResults from './components/SearchResults';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './styles/app.css';
+import Preload from './Preload';
+const App = () => {
+  const [done,setDone] = useState(false);
+  setTimeout(()=>{
+     setDone(true)
+  },5000)
+	return (
+		<div id="app" className="app">
+			{!done?(
+            <Preload />
+			) : (<>
+			<header id="header" className="header container-fluid">
+				
+				<Navigation />
+			   
+			</header>
+			<main className="app-content container-fluid">
+				<div className="music-content row">
+					<div className="music-content-section search-results-col">
+						<SearchResults />
+					</div>
+					<div className="music-content-section music-detials-col">
+						<MusicDetails />
+					</div>
+				</div>
+			</main>
+			</>) }
+		</div>
+	);
+};
 
 export default App;

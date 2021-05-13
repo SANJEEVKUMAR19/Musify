@@ -1,0 +1,92 @@
+
+.search-bar{
+	position: absolute;
+	left: 70%;
+	top: 19px;
+	animation: pop 3s ease-in 1 ;
+	
+}
+.app-title {
+	font-family: 'Carter One', cursive;
+	font-variant-caps: small-caps;
+	font-size: 45px;
+	animation: pop 0.1s ease-in 1 ;
+}
+
+@keyframes pop{
+	0%{
+		
+	   opacity:0;
+	  }
+	  100%{
+		 opacity: 1;
+	  }
+	  
+}
+.search-form {
+	display: flex;
+    padding-right: 20px;
+	
+}	
+.search-icon {
+
+padding-top: 5px;
+padding-left: 3px;
+
+position: relative;
+left: 25px;
+top: 5px
+}
+
+.search-input {
+	  padding-left:  4px;
+	  background: rgb(255, 253, 253);
+	  color: black;
+	  font-weight: bold;
+	 
+    width: 200px;
+	padding: 30px;
+	border-radius: 130px;
+	box-shadow:  0 0 2px 1.5px #d818ff;
+}
+
+.select {
+	 background: transparent;
+	color: rgb(17, 17, 17);
+	font-weight: bolder;
+     height: 20px;
+	width: 20px;
+	left: 37px;
+	top: 8px;
+	border:none; 
+	text-decoration: none;
+   position:absolute;
+	
+}
+
+.select-option {
+	color: rgb(14, 13, 13);
+	font-weight: bold;
+	 
+   
+}
+.select:focus{
+	border: none;
+	outline: none;
+}
+input[type=text], textarea {
+	transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 35px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #DDDDDD;
+  }
+   
+  input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 2px 2px #1890ff;
+	padding: 3px 0px 3px 35px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #1890ff;
+
+  }
+ 

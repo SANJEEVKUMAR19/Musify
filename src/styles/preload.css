@@ -1,0 +1,23 @@
+.preload {
+  font-family: 'Carter One', cursive;
+    color: rgb(235, 229, 230);
+   position: absolute;
+   top: -55%;
+   animation: fade 4s cubic-bezier(0,-0.14, 0.74, 0.76) 1s;
+   opacity: 0;
+   padding: 50%;
+   font-variant-caps: small-caps;
+  }
+ 
+  @keyframes fade{
+    0%{
+      opacity: 0;
+     background: rgb(17, 0, 0);
+       
+    }
+    100%{
+      opacity: 1;
+     background: linear-gradient(160deg, #191414 0%, #191414 100%);
+    
+    }
+  }

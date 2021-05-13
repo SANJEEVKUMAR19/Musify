@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.navbar {
+display: flex;
+
+}
+.conta{
+	position:relative;
+	top:450px;
+}
+.brand-section{
+	color: rgb(250, 255, 250);
+	border-top-left-radius: 90%;	
+	border-bottom-left-radius: 90%;
+	position: relative;
+	 left: 20px;	
+}
+
+
+.app-title {
+	font-family: 'Carter One', cursive;
+	font-size: 45px;
+}
+
+.app-icon{
+	color: #d818ff;
+	position:absolute;
+	left: 129px;
+}
+.app-icon:hover{
+ color:#1c76ec
+}
+
+
+	

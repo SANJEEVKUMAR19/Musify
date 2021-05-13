@@ -1,0 +1,45 @@
+.app {
+	width: 100%;
+	height: 100vh;
+}
+
+.header {
+
+	background: radial-gradient(ellipse at top, #0a0a0a, transparent),
+  radial-gradient(ellipse at bottom, #0c0c0c, transparent);
+  background-color: rgba(15, 15, 15, 0.973);
+	
+	width: 100%;
+	
+	height: 4.2rem;
+	box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.18);
+}
+
+.app-content {
+	width: 100%;
+	height: 100%;
+}
+
+.music-content {
+	justify-content: space-between;
+	width: 100%;
+
+	padding: 0.25rem 0.5rem;
+}
+
+.music-content-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.search-results-col {
+	
+	width: 100%;
+}
+
+.music-detials-col {
+	
+	width: 100%;
+}
